@@ -11,8 +11,8 @@ Swipe right to reset a puzzle or go back to previous ones. Swipe left to skip a 
 ## Running The Game
 1. Clone the repository to a folder of your choice.
 
-2. Open the index.html file found in the black-hole-square/public folder in 
-your favourite browser.
+2. Navigate to the black-hole-square/public folder and open the index.html file in your favourite browser.
+
 3. Enjoy!
 
 ## Making Code Changes or Contributions
