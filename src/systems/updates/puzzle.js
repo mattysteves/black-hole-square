@@ -69,9 +69,16 @@ window.addEventListener('wheel', e => {
     if (swiped) {
         return;
     }
+    // Swiping with mouse click-and-drag or touch
     if (e.deltaX <= -1) {
         wheelRight = true;
     } else if (e.deltaX >= 1) {
+        wheelLeft = true;
+    }
+    // Mouse scroll wheel
+    if (e.deltaY <= -1) {
+        wheelRight = true;
+    } else if (e.deltaY >= 1) {
         wheelLeft = true;
     }
 });
