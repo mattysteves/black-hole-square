@@ -2,9 +2,7 @@ import dataSystem from '../data.js';
 
 let update = (entities, entity, time, delta) => {
     let solved = dataSystem.load('solved') || [];
-    let sequence = (
-        dataSystem.load('payed')
-    ) ? entities.game.levels.wm : entities.game.levels.sequence;
+    let sequence = entities.game.levels.sequence;
     let current = entities.game.levels.current;
     let currentPuzzleId = sequence[current];
     let dots = [];

@@ -95,9 +95,7 @@ let update = (entities, entity, time, delta) => {
         entities.tapstext.text.text = (entity.puzzle.taps)
             ? entity.puzzle.taps + ' moves'
             : '';
-        let sequence = (
-            dataSystem.load('payed')
-        ) ? entities.game.levels.wm : entities.game.levels.sequence;
+        let sequence = entities.game.levels.sequence;
         let puzzleId = sequence[entities.game.levels.current];
         entities.titletext.text.text = (entity.puzzle.taps)
             ? 'The ' + puzzleId
@@ -246,9 +244,7 @@ let update = (entities, entity, time, delta) => {
                 < 1 / entities.game.canvas.zoom
             ) {
                 let levels = entities.game.levels;
-                let sequence = (
-                    dataSystem.load('payed')
-                ) ? entities.game.levels.wm : entities.game.levels.sequence;
+                let sequence = entities.game.levels.sequence;
                 if (swipedLeft || solution.length === 0) {
                     let oldLevel = levels.current;
                     levels.current = Math.min(
@@ -435,9 +431,7 @@ let update = (entities, entity, time, delta) => {
                     soundSystem.playSong(victorySound);
                     entities.feedback.text.text = 'Clean!';
                     let levels = entities.game.levels;
-                    let sequence = (
-                        dataSystem.load('payed')
-                    ) ? levels.wm : levels.sequence;
+                    let sequence = levels.sequence;
                     let puzzleId = sequence[levels.current];
                     if (solved.indexOf(puzzleId) < 0) {
                         solved.push(puzzleId);

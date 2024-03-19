@@ -49,30 +49,6 @@
         "turmoil",
         "end"
       ],
-      "wm": [
-        "settings",
-        "titlescreen",
-        "startscreen",
-        "click",
-        "wait",
-        "push",
-        "move",
-        "tango",
-        "substitute",
-        "wander",
-        "double",
-        "conflict",
-        "extract",
-        "grab",
-        "twin",
-        "snare",
-        "sink",
-        "support",
-        "snatch",
-        "swivel",
-        "turmoil",
-        "end"
-      ],
       "current": 1
     }
   },
