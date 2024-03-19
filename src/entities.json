@@ -26,6 +26,7 @@
     },
     "levels": {
       "sequence": [
+        "settings",
         "titlescreen",
         "startscreen",
         "click",
@@ -49,6 +50,7 @@
         "end"
       ],
       "wm": [
+        "settings",
         "titlescreen",
         "startscreen",
         "click",
@@ -71,7 +73,7 @@
         "turmoil",
         "end"
       ],
-      "current": 0
+      "current": 1
     }
   },
   "titlescreen": {
@@ -93,7 +95,8 @@
         "",
         "",
         "",
-        "Swipe left to start"
+        "Swipe left to start",
+        "Swipe right for settings"
       ],
       "lT": " ",
       "rT": " ",
@@ -133,6 +136,24 @@
       ],
       "lT": "Wrong way",
       "rT": "Let's puzzle"
+    }
+  },
+  "settings": {
+    "puzzle": {
+      "grid": [],
+      "init": true,
+      "taps": "",
+      "text": [
+        "Settings",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "lT": "Nothing this way...",
+      "rT": "Back to it!"
     }
   },
   "ad": {
