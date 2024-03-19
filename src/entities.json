@@ -110,20 +110,26 @@
   },
   "startscreen": {
     "puzzle": {
-      "grid": [],
+      "grid": [
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0,
+        0, 5, 0, 0, 1, 0
+      ],
       "init": true,
-      "taps": "",
+      "taps": "3",
       "text": [
         "Welcome to Black Hole Square!",
-        "Clean up all the other squares",
+        "Clean up all the squares",
         "in the universe. Just tap them",
         "and see what happens.",
         "",
         "Swipe right to reset a puzzle",
         "or go back to the old ones.",
         "Swipe left to skip a puzzle.",
-        "",
-        "Swipe left for first puzzle!"
+        ""
       ],
       "lT": "Wrong way",
       "rT": "Let's puzzle"
@@ -451,6 +457,17 @@
       "updates": [
         "progress"
       ]
+    }
+  },
+  "resetbutton": {
+    "position": {
+      "x": 0,
+      "y": 0,
+      "origin": "game"
+    },
+    "text": {
+      "text": "",
+      "align": "right"
     }
   },
   "tapstext": {
